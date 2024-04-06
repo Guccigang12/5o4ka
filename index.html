@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПятерОчка</title>
+</head>
+<body>
+    <h1>велкам ту пятерочка</h1>
+
+    <h2>Устроиться на работу</h2>
+    <form action="/add_employee" method="post">
+        <label for="employee_name">Ваше имя:</label>
+        <input type="text" id="employee_name" name="name" required>
+        <button type="submit">Создать аккаунт</button>
+    </form>
+
+    <h2>Выставить на продажу</h2>
+    <form action="/add_product" method="post">
+        <label for="product_name">Название продукта:</label>
+        <input type="text" id="product_name" name="name" required>
+        <button type="submit">Добавить</button>
+    </form>
+
+    <h2>Привязка продукта</h2>
+    <form action="/assign_employee_product" method="post">
+        <label for="employee_id">ID продавца:</label>
+        <input type="number" id="employee_id" name="employee_id" required>
+        <label for="product_id">ID продукта:</label>
+        <input type="number" id="product_id" name="product_id" required>
+        <button type="submit">Привязать</button>
+    </form>
+</body>
+</html>
